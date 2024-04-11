@@ -34,6 +34,45 @@ _I'd love for you to make the most of this project - it's all about learning, he
 
 3. **Install Required Dependencies**
 
+ ##FOR LINUX-->
+   # installs NVM (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# download and install Node.js
+nvm install 20
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.12.2`
+# verifies the right NPM version is in the environment
+npm -v # should print `10.5.0`
+
+## FOR MAC-->
+   # installs NVM (Node Version Manager)
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# download and install Node.js
+nvm install 20
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.12.2`
+
+# verifies the right NPM version is in the environment  
+npm -v # should print `10.5.0`
+
+## FOR WINDOWS 
+   # installs Chocolatey (Windows Package Manager)
+Set-ExecutionPolicy Bypass -Scope Process -Force;
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072;
+iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));
+
+# download and install Node.js
+choco install nodejs --version="20.12.2"
+
+# verifies the right Node.js version is in the environment
+node -v # should print `v20.12.2`
+
+# verifies the right NPM version is in the environment
+npm -v # should print `10.5.0`
+
+
    ```bash
    npm i
    ```
